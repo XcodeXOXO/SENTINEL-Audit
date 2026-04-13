@@ -1,0 +1,18 @@
+# Environments
+venv/
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Project Sentinel Specifics
+vector_store/         # Do not sync local database files
+report.md             # Do not sync audit outputs
+data/raw/             # Do not sync large scraped datasets
+data/fine_tuning/     # Do not sync raw training JSONLs
+
+# OS specifics
+.DS_Store
+Thumbs.db
