@@ -78,6 +78,3 @@ Use this for heavy inference if local hardware lacks a CUDA-capable GPU.
 
 ---
 
-## 👨‍💻 Author
-**G. Anand Subrahmanian** *Computer Science & Engineering (Blockchain Technology)* **GitHub**: [XcodeXOXO](https://github.com/XcodeXOXO)  
-**Location**: Hyderabad, India / Dubai, UAE
