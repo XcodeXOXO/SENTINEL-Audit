@@ -1,18 +1,40 @@
-# Environments
+# --- Environments & Secrets ---
 venv/
 .env
 
-# Python artifacts
+# --- Python & Jupyter Artifacts ---
 __pycache__/
 *.py[cod]
 *$py.class
+.ipynb_checkpoints/
 
-# Project Sentinel Specifics
-vector_store/         # Do not sync local database files
-report.md             # Do not sync audit outputs
-data/raw/             # Do not sync large scraped datasets
-data/fine_tuning/     # Do not sync raw training JSONLs
+# --- IDE Settings ---
+.vscode/
+.idea/
 
-# OS specifics
+# --- Project Sentinel Specifics ---
+
+# Data: Ignore raw data and training sets to keep repo size down
+data/raw/
+data/fine_tuning/
+
+# Weights: Exclude weights by default (GitHub has a 100MB file limit)
+# If you want to host weights, use Git LFS or a Cloud link in your README
+Llama3_Sentinel_v1/
+
+# Database / Vector Store
+vector_store/
+
+# Local Audit Outputs & Logs
+report.md
+audit_report_*.md
+*.log
+
+# Personal Notes / Temporary Context
+context.md
+gemini.md
+rreadme.md
+
+# --- OS Specifics ---
 .DS_Store
 Thumbs.db
